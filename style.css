@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#fff5f8;
+    color:#333;
+}
+
+header{
+    background:#ff4d88;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#ff80ab;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    color:#ff4d88;
+    margin-bottom:15px;
+}
+
+#search{
+    width:300px;
+    max-width:90%;
+    padding:10px;
+    margin-top:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    display:block;
+    margin:20px auto;
+    padding:12px 25px;
+    background:#ff4d88;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e63b77;
+}
+
+.title{
+    text-align:center;
+    margin:40px 0 20px;
+    color:#ff4d88;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:15px;
+}
+
+.card-body h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#ff4d88;
+    font-size:20px;
+    font-weight:bold;
+}
+
+footer{
+    margin-top:40px;
+    background:#ff4d88;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
