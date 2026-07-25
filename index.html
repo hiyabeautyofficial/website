@@ -1,103 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hiya Beauty Official</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiya Beauty Official</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#fff0f5;
-    color:#333;
-}
-
-header{
-    background:#ff4d88;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-nav{
-    background:#ff80ab;
-    padding:10px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-}
-
-.hero{
-    text-align:center;
-    padding:60px 20px;
-}
-
-.hero h1{
-    font-size:45px;
-    color:#ff4d88;
-}
-
-.hero p{
-    margin-top:15px;
-    font-size:18px;
-}
-
-button{
-    margin-top:25px;
-    padding:12px 25px;
-    background:#ff4d88;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:16px;
-}
-
-footer{
-    background:#ff4d88;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:50px;
-}
-</style>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<h1>Hiya Beauty Official</h1>
-<p>Your Beauty, Our Passion</p>
+    <h1>Hiya Beauty Official</h1>
+    <p>Your Beauty, Our Passion</p>
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <section class="hero">
-<h1>Welcome to Hiya Beauty Official</h1>
-<p>Discover premium beauty products with trusted quality.</p>
+    <h2>Welcome to Hiya Beauty Official</h2>
+    <p>Discover Premium Beauty Products at Affordable Prices.</p>
 
-<button>Shop Now</button>
+    <input type="text" id="search" placeholder="Search Product...">
+
+    <button onclick="scrollToProducts()">Shop Now</button>
+</section>
+
+<section id="products">
+
+    <h2 class="title">Our Products</h2>
+
+    <div id="product-list" class="product-grid">
+
+        <!-- Firebase Products will appear here -->
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>📱 WhatsApp: 01XXXXXXXXX</p>
+
+    <p>
+        Facebook |
+        Instagram |
+        TikTok
+    </p>
+
 </section>
 
 <footer>
-© 2026 Hiya Beauty Official. All Rights Reserved.
+
+    © 2026 Hiya Beauty Official
+
 </footer>
+
+<script type="module" src="app.js"></script>
+
+<script>
+function scrollToProducts(){
+    document.getElementById("products").scrollIntoView({
+        behavior:"smooth"
+    });
+}
+</script>
 
 </body>
 </html>
