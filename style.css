@@ -6,26 +6,38 @@
 }
 
 body{
-    background:#fff5f7;
+    background:#FFF8FB;
     text-align:center;
     color:#333;
+}
+
+/* Logo */
+
+.logo{
+    padding:25px 20px 10px;
+}
+
+.brand-name{
+    color:#E91E63;
+    font-size:42px;
+    font-weight:bold;
 }
 
 /* Hero */
 
 .hero{
-    padding:70px 20px 50px;
+    padding:40px 20px 60px;
 }
 
-.hero h1{
-    color:#ff4f8b;
-    font-size:40px;
-    margin-bottom:15px;
+.hero h2{
+    font-size:32px;
+    color:#333;
+    margin-bottom:10px;
 }
 
-.hero p{
-    font-size:18px;
-    color:#666;
+.hero-text{
+    font-size:16px;
+    color:#777;
     margin-bottom:30px;
 }
 
@@ -33,7 +45,7 @@ body{
     width:320px;
     max-width:90%;
     padding:14px;
-    border:2px solid #ff8db5;
+    border:2px solid #F48FB1;
     border-radius:30px;
     outline:none;
     font-size:16px;
@@ -42,7 +54,7 @@ body{
 button{
     margin-top:20px;
     padding:14px 35px;
-    background:#ff4f8b;
+    background:#E91E63;
     color:white;
     border:none;
     border-radius:30px;
@@ -52,17 +64,17 @@ button{
 }
 
 button:hover{
-    background:#e63d77;
+    background:#C2185B;
 }
 
 /* Products */
 
 #products{
-    padding:50px 20px;
+    padding:60px 20px;
 }
 
 #products h2{
-    color:#ff4f8b;
+    color:#E91E63;
     font-size:34px;
     margin-bottom:35px;
 }
@@ -74,7 +86,7 @@ button:hover{
     gap:30px;
 }
 
-/* Card */
+/* Product Card */
 
 .card{
     width:320px;
@@ -111,7 +123,7 @@ button:hover{
 }
 
 .price{
-    color:#ff4f8b;
+    color:#E91E63;
     font-size:28px;
     font-weight:bold;
 }
@@ -119,11 +131,11 @@ button:hover{
 /* Contact */
 
 #contact{
-    padding:50px 20px;
+    padding:60px 20px;
 }
 
 #contact h2{
-    color:#ff4f8b;
+    color:#E91E63;
     margin-bottom:25px;
 }
 
@@ -136,7 +148,7 @@ button:hover{
 
 .social a{
     text-decoration:none;
-    background:#ff4f8b;
+    background:#E91E63;
     color:white;
     padding:12px 22px;
     border-radius:30px;
@@ -144,14 +156,14 @@ button:hover{
 }
 
 .social a:hover{
-    background:#e63d77;
+    background:#C2185B;
 }
 
 /* Footer */
 
 footer{
     margin-top:40px;
-    background:#ff4f8b;
+    background:#E91E63;
     color:white;
     padding:18px;
 }
@@ -160,12 +172,16 @@ footer{
 
 @media(max-width:768px){
 
-.hero h1{
+.brand-name{
     font-size:30px;
 }
 
-.hero p{
-    font-size:16px;
+.hero h2{
+    font-size:26px;
+}
+
+.hero-text{
+    font-size:14px;
 }
 
 .card{
