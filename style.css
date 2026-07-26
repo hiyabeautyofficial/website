@@ -1,22 +1,24 @@
 .card{
     width:300px;
     background:#fff;
-    border-radius:20px;
+    border-radius:18px;
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
-    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    transition:0.3s ease;
     text-align:center;
-    padding-bottom:20px;
+    margin:auto;
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.18);
 }
 
 .card img{
     width:100%;
     height:300px;
     object-fit:cover;
+    display:block;
 }
 
 .card-body{
@@ -25,16 +27,20 @@
 
 .card-body h3{
     font-size:22px;
+    color:#333;
     margin-bottom:10px;
 }
 
 .card-body p{
     color:#666;
+    font-size:15px;
     margin-bottom:10px;
+    line-height:1.5;
 }
 
 .price{
-    font-size:24px;
     color:#ff4d88;
+    font-size:24px;
     font-weight:bold;
+    margin-top:10px;
 }
